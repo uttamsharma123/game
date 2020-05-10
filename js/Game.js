@@ -35,13 +35,13 @@ $(".click-btn").click(function(){
     if(toMatchValue==showValue)
     {
       $("#"+clickBtn).addClass("rightPressed");
-      setTimeout(function(){$("#"+clickBtn).removeClass("rightPressed");},3000);
+      setTimeout(function(){$("#"+clickBtn).removeClass("rightPressed");},200);
         scoreValue=scoreValue+5;
         var audio = new Audio('sounds/Correct-answer.mp3');
         audio.play();
       $(".score").text("Score: "+scoreValue)
 
-      setTimeout(ChangeAlpha,3000);
+      setTimeout(ChangeAlpha,200);
       console.log(scoreValue);
 
     }
@@ -54,22 +54,27 @@ $(".click-btn").click(function(){
 
          wrongValue=wrongValue+1;
          console.log("wrongValue "+wrongValue)
-         $("#"+clickBtn).removeClass("wrongPressed");},3000);
+         $("#"+clickBtn).removeClass("wrongPressed");},200);
+      /*   if(wrongValue==3)
+         {
+           $("section#game").remove();
+           $("nav").after("<section id='tryAgain'><div class='row try-again'><div class='col-lg-12'><h1 class='try-text'>Try Again!</h1> <button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
+         }*/
 
     }
    })
-   if(scoreValue>100)
-   {
-     alert("highScore:"+scoreValue);
-   }
-   if(wrongValue==3)
-   {
-     alert("tryAgain");
-     scoreValue=0;
-     $(".score").text("Score: "+scoreValue)
-   }
-});
 
+if(wrongValue>1)
+{
+  $("section#game").remove();
+  $("nav").after("<section id='tryAgain'><p class='score1'></p><div class='row try-again' style='padding-top:0; padding-bottom:100px;'><div class='col-lg-12'><h1 class='try-text'>Play Again!</h1> <button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
+  $(".score1").text("Score: "+scoreValue)
+}
+});
+function load() {
+  location.reload();
+
+}
 
 ///this is that function where user will click on start Game then he will get new page to play a game ....
 function ChangeAlpha() {
@@ -108,4 +113,3 @@ function shuffle(o)
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
 };
-  

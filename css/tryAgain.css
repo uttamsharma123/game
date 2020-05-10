@@ -13,89 +13,16 @@ body{
 }
 
 
-.game-box{
-   height: 800px;
-   margin:20px;
-   padding-left: 20px;
-    background-image: url("https://i.pinimg.com/564x/c1/2e/a2/c12ea23a27b351a23b55a91d272863c0.jpg");
-    padding:2% 5% 0 5%;
-    text-align: center;
-    background-size: 100% 1000px;
-    background-repeat: no-repeat;
-    border:1px solid red;
 
-}
-.game{
-  padding:2% 5% 2% 5%;
-
-}
 
 /* socre box*/
-.score{
-
-  border: 1px solid #202040;
-  text-align: left;
-  font-size: 2.5rem;
-  padding-left:10px;
-  font-weight: bold;
-  font-family: Georgia;
-  background-color: white;
-  width:260px;
-}
-
-.show-Alpha{
-  text-align: center;
-  color:#d7385e;
-  padding:7%;
-  font-size:15.5rem;;
-  font-family: Georgia;
-  font-weight: bold;
-
-}
-.bottom-button{
-  padding:10% 0% 0% 0%;
-
-}
-.h1-btn{
-  font-size: 6.5rem;
-  font-family: "Times New Roman",sans-serif;
-  color:#035aa6;
-  font-weight: bold;
-   text-shadow: 2px 2px  #888888;
-
-}
-.click-btn {
-  height: 200px;
-  width: 150px;
-  margin:20px;
-  border: none;
-  box-shadow: 0px 0px 10px 0px #eb4559;
-  border-radius: 50%;
-  display: inline-block;
 
 
 
-}
 
 
-.pressed{
-  background-color: #fff;
-  box-shadow: 0px 0px 20px 2px #888888;
-  transform: translateY(4px);
-}
-.wrongPressed{
-  background-color: #fa877f;
-  box-shadow: 0px 0px 20px 2px #888888;
-  transform: translateY(4px);
-}
-.rightPressed{
-  background-color: #b7efcd;
-  box-shadow: 0px 0px 20px 2px #888888;
-  transform: translateY(4px);
-}
-.shadow-box{
-   text-shadow: 6px 2px  #faf4ff;
-}
+
+
 .try-again{
   font-size: 10rem;
   text-align: center;
@@ -147,9 +74,7 @@ body{
 
 }
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
+
   .big-text
   {
     font-size: 1.5rem;
@@ -159,42 +84,8 @@ body{
     width:40px;
 
   }
-.game-box{
-    height: 500px;
-
-    margin:20px;
-    padding: 20px;
-    background-size: 100% 500px;
-    background-repeat: no-repeat;
-  }
-  .show-alphabet{
-        }
-
-.click-btn
-{
-  height: 70px;
-  width: 50px;
-  margin:5px;
-
-}
-
-.bottom-button{
 
 
-}
-.h1-btn
-{
-  font-size: 2.5rem;
-}
-.score{
-  font-size: 1.5rem;
- width:170px;
-
-}
-.show-Alpha{
-  font-size:10rem;
-    padding:5%;
-}
 .try-again{
   font-size: 3.5rem;
 
