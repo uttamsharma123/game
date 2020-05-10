@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--cdn for css bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,9 +16,7 @@
 
     <title></title>
   </head>
-  <body onload=" ChangeAlpha();">
-
-    <!-- NavBar -->
+  <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
      <a class="navbar-brand "href="#"><img src="images/uttam.png"  class="d-inline-block align-top logo-img" alt=""></a>
@@ -28,12 +26,10 @@
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item ">
+          <li class="nav-item active">
            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-           <a class="nav-link" href="#">Game</a>
-          </li>
+
           <li class="nav-item ">
            <a class="nav-link" href="#">Contact</a>
           </li>
@@ -43,52 +39,27 @@
       </div>
 
       </nav>
-  </div>
-  <!-- end of  NavBar -->
-
-
-  <!-- Game box-->
-
-    <div class="container-fluid  game-box">
-    <div class="row ">
-      <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-       <p class="score">Score</p>
-
-       </div>
-
-     <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-         <h1 class="show-Alpha shadow-box">A</h1>
-
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-         
-       </div>
-
 
 
     </div>
-    <div class="row bottom-button">
-      <div class="col-lg=12 col-md-12 col-sm-12 ">
 
+    <div class="container">
 
-           <button class="click-btn"  id="btn1" type="button" name="button"><h1 class="type1">a</h1></button>
-           <button class="click-btn " id="btn2" type="button" name="button"><h1 class="type2">a</h1></button>
-           <button class="click-btn " id="btn3" type="button" name="button"><h1 class="type3">a</h1></button>
-           <button class="click-btn " id="btn4" type="button" name="button"><h1 class="type4">a</h1></button>
+    <form  action="game.html" method="post">
+      <button class="start-game" type="submit" name="button">start Game</button>
+    </form>
 
-
-      </div>
 
     </div>
+
+
+
+
+    <div class="container">
+
     </div>
-    <!-- End of Game box-->
+<script type="text/javascript" src="js/Game.js">
 
-    <script type="text/javascript" src="js/Game.js">
-
-    </script>
-
+</script>
   </body>
 </html>

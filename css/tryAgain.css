@@ -9,9 +9,6 @@ body{
 }
   .logo-img{
   width:50px;
-  border:1px solid #00263b;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #ff5200;
 
 }
 
@@ -28,8 +25,8 @@ body{
     border:1px solid red;
 
 }
-#game{
-  padding-top:3%;;
+.game{
+  padding:2% 5% 2% 5%;
 
 }
 
@@ -64,7 +61,7 @@ body{
   font-family: "Times New Roman",sans-serif;
   color:#035aa6;
   font-weight: bold;
-   text-shadow: 3px 0px  #888888;
+   text-shadow: 2px 2px  #888888;
 
 }
 .click-btn {
@@ -102,22 +99,22 @@ body{
 .try-again{
   font-size: 10rem;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 6%;
 }
 #footer{
   text-align: center;
 
-
-  background-color: #f1e3cb;
+  padding: 7% 10%;
+  background-color: #3b6978;
   height: 5px;
 
 }
 #foot{
-background-color: #fff0f5;
+  padding-top:80px;
   text-align: center;
 }
 .contact-icon{
-  margin:0px;
+  margin:10px;
   font-size: 30px;
 }
 
@@ -127,21 +124,27 @@ background-color: #fff0f5;
 #developed-by{
   font-size: 1rem;
 }
+
 .try-text{
-  text-shadow: 2px 2px  #d63447;
-  color:#ffd31d;
-  margin-bottom: 10%;
+  text-shadow: 2px 2px  #ffd31d;
+  color:#d63447;
+  margin-bottom: 5%;
+  font-size: 7rem;
 }
 .try-img{
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width:200px;
   text-align: center;
+  padding-bottom: 15%;
 }
 .try-btn{
   border-radius: 100%;
   background-color:#74d4c0;
   box-shadow: 0px 0px 20px 2px #888888;
   border: 2px solid #6a097d;
+  width:300px;
+    height:300px;
+
 }
 @media only screen and (max-width: 800px) {
   body {
@@ -154,8 +157,7 @@ background-color: #fff0f5;
   }
   .logo-img{
     width:40px;
-    border:1px solid red;
-    border-radius: 50%;
+
   }
 .game-box{
     height: 500px;
@@ -173,8 +175,6 @@ background-color: #fff0f5;
   height: 70px;
   width: 50px;
   margin:5px;
-
-
 
 }
 
@@ -204,5 +204,28 @@ background-color: #fff0f5;
 
   padding: 50% 10%;
 
+}
+
+.try-text{
+  text-shadow: 2px 2px  #ffd31d;
+  color:#d63447;
+  margin-bottom: 10%;
+  font-size: 3.5rem;
+
+}
+.try-img{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding-bottom:0;
+}
+.try-btn{
+  border-radius: 100%;
+
+  background-color:#74d4c0;
+  box-shadow: 0px 0px 20px 2px #888888;
+  border: 2px solid #6a097d;
+  width:150px;
+  height: 150px;
 }
 }

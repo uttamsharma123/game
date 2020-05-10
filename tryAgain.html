@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/tryAgain.css">
 
     <!--cdn for css bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,8 +21,8 @@
   <body onload=" ChangeAlpha();">
 
     <!-- NavBar -->
-
-      <nav class="navbar navbar-expand-lg  navbar-light" style="background-color:#f4f4f4; " >
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg  navbar-light bg-light">
      <a class="navbar-brand "href="#"><img src="images/uttam.png"  class="d-inline-block align-top logo-img" alt=""></a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
            <a class="nav-link" href="#">Game</a>
           </li>
           <li class="nav-item ">
-           <a class="nav-link"  href="#foot">Contact</a>
+           <a class="nav-link" href="#">Contact</a>
           </li>
 
 
@@ -45,76 +45,37 @@
       </div>
 
       </nav>
+  </div>
 
-  <!-- end of  NavBar -->
+<div class="row try-again">
+  <div class="col-lg-12">
+    <h1 class="try-text">Try Again!</h1>
+      <button   class="try-btn" type="submit" name="button"> <img class="try-img" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png" alt=""> </i></button>
+    </form>
 
-
-  <!-- Game box-->
-
-
-
-    <!-- End of Game box-->
-    <section id="game">
-
-
-    <div class="jumbotron" >
-      <div class="container game-box">
-
-           <div class="row  ">
-             <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-              <p class="score">Score: 0</p>
-
-
-              </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-                <h1 class="show-Alpha shadow-box">A</h1>
-
-             </div>
-             <div class="col-lg-4 col-md-4 col-sm-4 ">
-
-
-              </div>
+  </div>
+</div>
 
 
 
-           </div>
 
-           <div class="row bottom-button">
-             <div class="col-lg=12 col-md-12 col-sm-12 ">
-
-         <hr>
-                  <button class="click-btn"  id="btn1" type="button" name="button"><h1 class="type1 h1-btn"></h1></button>
-                  <button class="click-btn " id="btn2" type="button" name="button"><h1 class="type2 h1-btn"></h1></button>
-                  <button class="click-btn " id="btn3" type="button" name="button"><h1 class="type3 h1-btn"></h1></button>
-                  <button class="click-btn " id="btn4" type="button" name="button"><h1 class="type4 h1-btn"></h1></button>
-
-
-             </div>
-
-           </div>
-
-      </div>
-    </div>
-</section>
-
-
-<script type="text/javascript" src="js/Game.js">
+<script type="text/javascript" src="js/tryAgain.js">
 
 </script>
+
+<footer id="foot">
+  <div class="row">
+
+      <div class="col-lg-12 col-sm-12 col-md-12">
+<hr>
+         <p> <a class="contact-icon" href="https:www.facebook.com/Uttam-Sharma-100854064970202/"><i class='fab fa-facebook'></i></a> <a class="contact-icon" href="#"><i class='fab fa-instagram' style='color:red'></i></a> </p>
+        <p class="developed-para"><i id="developed-by">Developed by: </i>Uttam Sharma</p>
+        <hr>
+      </div>
+
+  </div>
+</footer>
   </body>
-  <footer id="foot">
-    <div class="row">
 
-        <div class="col-lg-12">
-
-           <p> <a class="contact-icon" href="#"><i class='fab fa-facebook'></i></a> <a class="contact-icon" href="#"><i style='color:red'class='fab fa-instagram'></i></a> </p>
-          <p class="developed-para"><i id="developed-by">Developed by: </i>Uttam Sharma</p>
-        </div>
-
-    </div>
-  </footer>
 
 </html>
