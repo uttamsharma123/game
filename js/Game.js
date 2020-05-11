@@ -20,22 +20,41 @@ var timer=100;
 
 var audio = new Audio('sounds/timer.m4a');
 
+function Timer() {
+
+
 var interval=window.setInterval(function() {
  $(".timer").text(timer)
 
- timer=timer-1;
+ timer=timer+1;
  console.log(timer)
-if(timer==-0){
+if(timer==0){
 window.clearInterval(interval);
 $("section#game").remove();
 $("nav").after("<section id='tryAgain'><p class='score1'></p><div class='row try-again' style='padding-top:0; padding-bottom:100px;'><div class='col-lg-12'><button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
 $(".score1").text("High-Score: "+scoreValue)
 }
-}, 500)
+}, 500);
+}
 /*
 $("button.start").click(function functionName() {
 audio.play();
+
+
 })*/
+
+$(".start-game").click(function() {
+  $("div.Game").remove();
+  $(".hideObject").css("visibility","visible")
+   Timer();
+   mainFunction();
+   
+
+})
+
+function mainFunction() {
+
+
 $(".click-btn").click(function(){
 
   clickBtn=$(this).attr("id");
@@ -92,6 +111,8 @@ if(wrongValue>3)
   $(".score1").text("Score: "+scoreValue)
 }
 });
+
+}
 function load() {
   location.reload();
 
