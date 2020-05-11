@@ -44,7 +44,7 @@ $(".click-btn").click(function(){
     var b=randomValue(alphabet);
    //$(".show-Alpha").text(alphabet[b]);
 
-   $("button#"+clickBtn).click(function() {
+   $("div#"+clickBtn).click(function() {
      var str=$(this).html();
 
      var btnClicked=str.slice(11,16)
