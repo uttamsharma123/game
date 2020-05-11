@@ -48,7 +48,7 @@ $(".start-game").click(function() {
   $(".hideObject").css("visibility","visible")
    Timer();
    mainFunction();
-   
+
 
 })
 
