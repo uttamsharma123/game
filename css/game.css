@@ -64,7 +64,9 @@ body{
   font-family: "Times New Roman",sans-serif;
   color:#035aa6;
   font-weight: bold;
-   text-shadow: 3px 0px  #888888;
+  text-shadow: 3px 0px  #888888;
+  text-align: center;
+  padding-top:15%;
 
 }
 .click-btn {
@@ -74,7 +76,10 @@ body{
   border: none;
   box-shadow: 0px 0px 10px 0px #eb4559;
   border-radius: 50%;
-  display: inline-block;
+  display:inline-block;
+  background-color:#dddddd;
+
+
 
 
 
@@ -168,8 +173,9 @@ left:260%;
 font-size:3rem;
 font-weight: bold;
 font-family: Georgia;
-color:#00005c;
+color:#ff5200;
 padding:2%;
+text-shadow: 3px 0 #fff;
 }
 @media only screen and (max-width: 800px) {
   body {
@@ -179,7 +185,7 @@ padding:2%;
   .timer{
 
   position: absolute;
-  top:4%;
+  top:0%;
   left:80%;
   font-size: 1.4rem;
 
