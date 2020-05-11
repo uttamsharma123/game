@@ -26,7 +26,7 @@ function Timer() {
 var interval=window.setInterval(function() {
  $(".timer").text(timer)
 
- timer=timer+1;
+ timer=timer-1;
  console.log(timer)
 if(timer==0){
 window.clearInterval(interval);
