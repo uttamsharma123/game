@@ -104,7 +104,7 @@ $(".click-btn").click(function(){
     }
    })
 
-if(wrongValue>3)
+if(wrongValue>0)
 {
   $("section#game").remove();
   $("nav").after("<section id='tryAgain'><p class='score1'></p><div class='row try-again' style='padding-top:0; padding-bottom:100px;'><div class='col-lg-12'><h1 class='try-text'>Play Again!</h1> <button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
