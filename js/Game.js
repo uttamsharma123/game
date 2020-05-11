@@ -14,7 +14,28 @@ var value=0;
  var clickBtn="";
  var scoreValue=0;
  var wrongValue=0;
+
 //this is that function when user will click on any button he will get like push that button
+var timer=100;
+
+var audio = new Audio('sounds/timer.m4a');
+
+var interval=window.setInterval(function() {
+ $(".timer").text(timer)
+
+ timer=timer-1;
+ console.log(timer)
+if(timer==-0){
+window.clearInterval(interval);
+$("section#game").remove();
+$("nav").after("<section id='tryAgain'><p class='score1'></p><div class='row try-again' style='padding-top:0; padding-bottom:100px;'><div class='col-lg-12'><button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
+$(".score1").text("High-Score: "+scoreValue)
+}
+}, 500)
+/*
+$("button.start").click(function functionName() {
+audio.play();
+})*/
 $(".click-btn").click(function(){
 
   clickBtn=$(this).attr("id");
@@ -64,7 +85,7 @@ $(".click-btn").click(function(){
     }
    })
 
-if(wrongValue>1)
+if(wrongValue>3)
 {
   $("section#game").remove();
   $("nav").after("<section id='tryAgain'><p class='score1'></p><div class='row try-again' style='padding-top:0; padding-bottom:100px;'><div class='col-lg-12'><h1 class='try-text'>Play Again!</h1> <button  onclick='load()' class='try-btn' type='submit' name='button'> <img class='try-img' src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png' alt=''> </i></button></form></div></div></section>")
@@ -73,6 +94,7 @@ if(wrongValue>1)
 });
 function load() {
   location.reload();
+
 
 }
 

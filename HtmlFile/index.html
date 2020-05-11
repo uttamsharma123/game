@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="home.css">
 
     <!--cdn for css bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,40 +17,80 @@
     <title></title>
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-     <a class="navbar-brand "href="#"><img src="images/uttam.png"  class="d-inline-block align-top logo-img" alt=""></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+    <nav class="navbar navbar-expand-lg  navbar-light" style="background-color:#f4f4f4; " >
+   <a class="navbar-brand "href="#"><img src="images/uttam.png"  class="d-inline-block align-top logo-img" alt=""></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item active">
-           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+        <li class="nav-item ">
+         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+         <a class="nav-link" href="#">Game</a>
+        </li>
+        <li class="nav-item ">
+         <a class="nav-link"  href="#foot">Contact</a>
+        </li>
 
-          <li class="nav-item ">
-           <a class="nav-link" href="#">Contact</a>
-          </li>
+
+      </ul>
+    </div>
+
+    </nav>
 
 
-        </ul>
+    <section id="game-select" >
+<div class="container-fluid">
+
+
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12"></div>
+
+        <div class="col-lg-9 col-md-12 col-sm-12">
+
+          <div class="row">
+
+
+            <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="game1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">KidsAlpha</h5>
+            <p class="card-text">When You Play this Game You will get Interface Like above Image where you will get one alpha and you will  have to match from four alpha</p>
+            <a href="#" class="btn btn-primary">Play</a>
+           </div>
+           </div>
+
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+
+
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="game2.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">KidsRunner</h5>
+            <p class="card-text">when you will Play this game you will get same above image where you will click on you button then man will run whatever you are getting value that much he will take steps</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+
+             </div>
+
+           </div>
+
+        </div>
+
       </div>
 
-      </nav>
 
 
-    </div>
-
-    <div class="container">
-
-    <form  action="game.html" method="post">
-      <button class="start-game" type="submit" name="button">start Game</button>
-    </form>
 
 
-    </div>
+      </div>
+</div>
+    </section>
+
 
 
 
